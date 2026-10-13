@@ -32,7 +32,7 @@ else
   fail "Dockerfile or README is missing the OpenClaw variant contract"
 fi
 
-if grep -q 'base-771198a9609dcef54d44843e7da5329c17fa51b4@sha256:' "$root/Dockerfile"; then
+if grep -q 'base-ddbaa6bc0f9e071d9411777b91590e755e367d84@sha256:' "$root/Dockerfile"; then
   ok "Plow OpenClaw base is pinned by tag and digest"
 else
   fail "Plow OpenClaw base is not pinned by immutable digest"
